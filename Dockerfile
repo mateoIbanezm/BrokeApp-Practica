@@ -1,10 +1,10 @@
-FROM python:3.9
+FROM python:2.7
 
 WORKDIR /app
 
 COPY requirements.txt /tmp/requirements.txt
 
-RUN pip install --no-cache-dir -r /temp/requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 COPY app/ .
 
